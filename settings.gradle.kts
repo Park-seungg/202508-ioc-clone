@@ -1,0 +1,1 @@
+rootProject.name = "202508-ioc-clone"
