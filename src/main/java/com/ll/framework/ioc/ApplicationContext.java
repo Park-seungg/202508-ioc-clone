@@ -24,9 +24,10 @@ public class ApplicationContext {
 
         if (bean == null) {
             bean = switch (beanName) {
-                case "testPostService" -> new TestPostService();
-                default ->  null;
+                case "testPostService" -> new TestPostService
+                        (genBean("testPostRepository"));
                 case "testPostRepository" -> new TestPostRepository();
+                default ->  null;
             };
             beans.put(beanName, bean);
         }
