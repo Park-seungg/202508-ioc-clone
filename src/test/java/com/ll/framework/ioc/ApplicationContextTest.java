@@ -82,14 +82,4 @@ public class ApplicationContextTest {
                 applicationContext.genBean("testPostRepository")
         );
     }
-
-    public class ClsUtilTest {
-        @Test
-        @DisplayName("ClsUtil.loadClass")
-        void t1() {
-            Class<TestCar> cls = ClsUtil.loadClass("com.ll.framework.ioc.util.sample.TestCar");
-
-            assertThat(cls).isEqualTo(TestCar.class);
-        }
-    }
 }
